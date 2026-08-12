@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "site": "https://test.ednext.com.vn",
+    "course": "thuat-toan-can-ban",
+    "startedAt": "2026-08-11T10:16:39.361Z",
+    "startEpoch": 1786443399368,
+    "concurrency": 1,
+    "offset": 0,
+    "doSubmit": false,
+    "headless": true,
+    "blockAssets": true,
+    "skipEnroll": true,
+    "activities": [
+      {
+        "key": "act1",
+        "id": 1934,
+        "name": "isPrime"
+      }
+    ],
+    "finishedAt": "2026-08-11T10:16:54.386Z",
+    "totalMs": 14923
+  },
+  "results": [
+    {
+      "user": "1hvm",
+      "index": 0,
+      "ok": true,
+      "startEpoch": 1786443405530,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 241,
+          "status": "ok",
+          "durMs": 5921,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 6162,
+          "status": "ok",
+          "durMs": 1601,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 7763,
+          "status": "ok",
+          "durMs": 2559,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 10322,
+          "status": "ok",
+          "durMs": 427,
+          "detail": {
+            "id": 1934,
+            "method": "monaco",
+            "attempt": 1
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 10749,
+          "status": "ok",
+          "durMs": 4235,
+          "detail": {
+            "result": "pass"
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass"
+    }
+  ]
+}

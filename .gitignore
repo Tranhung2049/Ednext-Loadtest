@@ -1,0 +1,9 @@
+# KHÔNG đưa thông tin đăng nhập lên repo công khai
+accounts*.txt
+*.env
+.env*
+
+node_modules/
+playwright-report/
+test-results/
+*.log

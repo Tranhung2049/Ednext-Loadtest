@@ -1,0 +1,156 @@
+URL: https://test.ednext.com.vn/learning/thuat-toan-can-ban?activityType=12&activityId=1934&tab=description
+TITLE: isPrime | Ednext
+CHỮ KÝ KHAI BÁO TRONG CONFIG: bool IsPrime(int n)
+KẾT QUẢ THỬ ĐÁP ÁN: pass
+
+===== EDITOR / STARTER =====
+
+
+===== BODY TEXT =====
+isPrime
+1
+2
+3
+4
+5
+6
+7
+8
+9
+ednext
+Easy
+100 Điểm
+Giới hạn kí tự: Không giới hạn
+Giới thiệu về kiểu bài genCode.
+
+Nếu bạn là đã quen với việc viết hàm main(), tự nhập dữ liệu từ bàn phím và xuất dữ liệu ra màn hình, thì hôm này chúng tôi sẽ giới thiệu đến các bạn kiểu bài genCode.
+
+Ví dụ với bài tính tổng hai số nguyên a và b:
+
+Chương trình hoàn chỉnh sẽ như sau:
+
+#include<iostream>
+
+using namespace std;
+
+int sum (int a, int b){
+	return a + b;
+}
+
+int main(){
+	int a, b;
+	cin >> a >> b;
+	cout << sum(a, b);
+	
+	return 0;
+}
+Copy
+
+Để tiết kiệm thời gian của các bạn chúng tôi sẽ chỉ yêu cầu các bạn viết hàm xử lý thôi, không cần phải viết hàm main(), ví dụ như bài ở trên các bạn sẽ chỉ thấy code mẫu là:
+
+int sum (int a, int b){
+	
+}
+Copy
+
+Việc cần làm của bạn là viết hoàn chỉnh hàm đấy sao cho nó trả về đúng kết quả cần làm của đề ra.
+
+Code của bạn khi chạy thử/nộp bài sẽ là:
+
+int sum (int a, int b){
+	return a + b;
+}
+Copy
+
+Nếu nhiều bạn thắc mắc về việc có cần thêm các thư viện không, thì vấn đề này các bạn yên tâm, chúng tôi đã thêm hầu hết các thư viện cơ bản, bạn có thể sử dụng nó mà không cần khai báo nó.
+
+Hãy thử làm bài tập bên dưới bằng kiểu bài này nhé.
+
+Đề bài.
+
+Một số nguyên tố là một số tự nhiên lớn hơn 1 và không thể tạo thành từ tích của hai số tự nhiên nhỏ hơn.
+
+Ví dụ số 2, 3, 5 được gọi là số nguyên tố
+
+Viết một hàm xác định xem một số nguyên dương đã cho có phải là số nguyên tố hay không.
+
+Ví dụ
+
+Với n = 47, đầu ra là isPrime(n) = true
+
+
+Với n = 4, đầu ra là isPrime(n) = false
+
+Đầu vào/Đầu ra
+
+[Giới hạn thời gian chạy] 0.5 seconds
+
+[Đầu vào] integer n
+
+Điều kiện tiền đề:
+0 ≤ n ≤ 1000.
+
+[Đầu ra] boolean
+
+true nếu n là số nguyên tố, false nếu không phải.
+
+Gợi ý:
+
+Kiểm tra xem n có chia hết cho số nào trong khoảng từ 2 tới căn bậc 2 của n hay không? Nếu không thì n là số nguyên tố, ngược lại tức là n không phải là số nguyên tố.
+Vì nếu n không chia hết cho các số từ 2 đến phần nguyên căn bậc hai của n thì cũng sẽ không chia hết cho các số từ phần tử từ phần nguyên căn bậc hai của n đến n - 1.
+Lý thuyết
+
+Cách kiểm tra một số có phải một số nguyên dương n có phải số nguyên tố hay không ? 
+
+Ta lần lượt xét các số từ 2 đến n-1 và kiểm tra xem số đó có phải là ước của n hay không ? Nếu nó là ước của n thì ta trả về giá trị false
+bool isPrime(int n)
+{
+    if (n <= 1) return false;
+    for (int i = 2; i <= n-1; ++i) 
+        if (n % i == 0) return false;
+    return true;
+}
+​
+Copy
+Độ phức tạp : O(n)
+
+Bạn có thể đọc phần gợi ý để biến nó về độ phức tạp chỉ O(√n).
+
+Hướng dẫn bài tập.
+
+Code mẫu:
+
+Ngôn ngữ C++:
+
+bool isPrime(int n)
+{
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) 
+        if (n % i == 0)
+            return false;
+    return true;
+}
+Copy
+Chạy thử
+Nộp bài
+1
+KIỂM THỬ
+Vui lòng chạy thử code của bạn trước!
+Kiểm thử 1
+Kiểm thử 2
+Kiểm thử 3
+Kiểm thử 4
+Kiểm thử 5
+Kiểm thử 6
+Kiểm thử 7
+Kiểm thử 8
+Kiểm thử 9
+Kiểm thử 10
+Đầu vào
+47
+Đầu ra thực tế
+Đầu ra mong đợi
+true
+Giới hạn thời gian
+500 ms
+Thời gian thực thi

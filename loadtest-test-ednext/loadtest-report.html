@@ -1,0 +1,279 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Load Test https://test.ednext.com.vn — Báo cáo</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--ink:#1a1d24;--mut:#5b6472;--line:#e5e8ee;--ok:#1a8f4c;--okbg:#e8f7ee;--err:#c0392b;--errbg:#fdecea;--acc:#2d6cdf;--accbg:#eaf1fd;}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1216;--card:#171b21;--ink:#e8ebf0;--mut:#9aa4b2;--line:#252b34;--ok:#43c47a;--okbg:#12301f;--err:#ff6b5e;--errbg:#331714;--acc:#5b9bff;--accbg:#132238;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  .wrap{max-width:1240px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:24px;margin:0 0 4px} h2{font-size:18px;margin:34px 0 12px}
+  .sub{color:var(--mut);margin:0 0 20px;font-size:13.5px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+  .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .c .n{font-size:26px;font-weight:700} .c .l{color:var(--mut);font-size:12.5px;margin-top:2px}
+  .c.good .n{color:var(--ok)} .c.bad .n{color:var(--err)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{background:var(--accbg);color:var(--ink);font-weight:600;font-size:12px;position:sticky;top:0}
+  td.ok{color:var(--ok)} td.error,td.err{color:var(--err)} td.na{color:var(--mut)}
+  td.u{font-weight:600} td.st{font-weight:700}
+  .scroll{overflow-x:auto;border-radius:12px}
+  .etip{font-size:11px;color:var(--err);white-space:normal;max-width:220px;margin-top:2px}
+  .errbox{background:var(--errbg);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+  .errbox .cnt{font-weight:700;color:var(--err)} .errbox .us{color:var(--mut);font-size:12px}
+  .meta{font-size:12.5px;color:var(--mut)}
+  .pill{display:inline-block;background:var(--accbg);color:var(--acc);border-radius:20px;padding:2px 10px;font-size:12px;font-weight:600;margin-right:6px}
+  i{color:var(--acc);font-style:normal;font-weight:600}
+  footer{margin-top:40px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+</style></head><body><div class="wrap">
+
+<h1>Load Test — https://test.ednext.com.vn</h1>
+<p class="sub">30 tài khoản đăng nhập &amp; làm 3 bài code <b>đồng thời</b> · Khóa <b>thuat-toan-can-ban</b> · Bắt đầu 2026-08-11T10:08:41.139Z · Tổng thời gian 378747ms</p>
+
+<div>
+  <span class="pill">Đồng thời: 30 acc</span>
+  <span class="pill">Chế độ: headless</span>
+  <span class="pill">Nộp bài: CÓ</span>
+  <span class="pill">Đăng ký khóa trong burst: không (pre-enroll sẵn)</span>
+  <span class="pill">Chặn ảnh/tracker: CÓ</span>
+</div>
+
+<div class="cards">
+  <div class="c"><div class="n">30</div><div class="l">Tài khoản chạy đồng thời</div></div>
+  <div class="c good"><div class="n">30</div><div class="l">Acc hoàn tất không lỗi</div></div>
+  <div class="c "><div class="n">0</div><div class="l">Acc có lỗi</div></div>
+  
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 1 (isPrime): chấm PASS</div></div>
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 2 (factorSum): chấm PASS</div></div>
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 3 (greatestCommonPrimeDivisor): chấm PASS</div></div>
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 1 (isPrime): NỘP BÀI OK</div></div>
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 2 (factorSum): NỘP BÀI OK</div></div>
+  <div class="c"><div class="n">30/30</div><div class="l">Bài 3 (greatestCommonPrimeDivisor): NỘP BÀI OK</div></div>
+  <div class="c"><div class="n">3ms</div><div class="l">Độ giãn thời điểm login (càng nhỏ càng đồng thời)</div></div>
+</div>
+
+<h2>Độ trễ theo từng pha (chỉ tính lượt thành công)</h2>
+<div class="scroll"><table>
+  <thead><tr><th>Pha</th><th>Chạy</th><th>OK</th><th>Lỗi</th><th>Min</th><th>Trung bình</th><th>P50</th><th>P95</th><th>Max</th></tr></thead>
+  <tbody><tr>
+    <td class="u">Đăng nhập</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>1785ms</td><td>4910ms</td><td>6010ms</td><td>7330ms</td><td>7375ms</td>
+  </tr><tr>
+    <td class="u">Mở bài 1</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>11020ms</td><td>13400ms</td><td>13037ms</td><td>16313ms</td><td>16652ms</td>
+  </tr><tr>
+    <td class="u">Gõ code 1</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>60548ms</td><td>60674ms</td><td>60678ms</td><td>60830ms</td><td>60831ms</td>
+  </tr><tr>
+    <td class="u">Chạy thử 1</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>6456ms</td><td>8846ms</td><td>9013ms</td><td>9784ms</td><td>9785ms</td>
+  </tr><tr>
+    <td class="u">Nộp bài 1</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>9893ms</td><td>53593ms</td><td>71622ms</td><td>72297ms</td><td>72298ms</td>
+  </tr><tr>
+    <td class="u">Mở bài 2</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>4686ms</td><td>8425ms</td><td>10184ms</td><td>11035ms</td><td>11139ms</td>
+  </tr><tr>
+    <td class="u">Gõ code 2</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>60544ms</td><td>60684ms</td><td>60678ms</td><td>60872ms</td><td>60980ms</td>
+  </tr><tr>
+    <td class="u">Chạy thử 2</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>6715ms</td><td>8797ms</td><td>9185ms</td><td>9970ms</td><td>9980ms</td>
+  </tr><tr>
+    <td class="u">Nộp bài 2</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>7452ms</td><td>10473ms</td><td>10780ms</td><td>11287ms</td><td>11311ms</td>
+  </tr><tr>
+    <td class="u">Mở bài 3</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>4943ms</td><td>14454ms</td><td>15083ms</td><td>16238ms</td><td>16243ms</td>
+  </tr><tr>
+    <td class="u">Gõ code 3</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>60556ms</td><td>60813ms</td><td>60765ms</td><td>61653ms</td><td>61770ms</td>
+  </tr><tr>
+    <td class="u">Chạy thử 3</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>6213ms</td><td>8982ms</td><td>9444ms</td><td>10209ms</td><td>10212ms</td>
+  </tr><tr>
+    <td class="u">Nộp bài 3</td><td>30</td>
+    <td class="ok">30</td><td class="na">0</td>
+    <td>9100ms</td><td>11671ms</td><td>11518ms</td><td>13436ms</td><td>13456ms</td>
+  </tr></tbody>
+</table></div>
+
+<h2>Lỗi &amp; bug ghi nhận </h2>
+<p class="meta">Không có lỗi nào ở các pha đã chạy.</p>
+
+<h2>Chi tiết từng tài khoản</h2>
+<div class="scroll"><table>
+  <thead><tr><th>Tài khoản</th><th>Kết quả</th><th>Đăng nhập</th><th>Mở bài 1</th><th>Gõ code 1</th><th>Chạy thử 1</th><th>Nộp bài 1</th><th>Mở bài 2</th><th>Gõ code 2</th><th>Chạy thử 2</th><th>Nộp bài 2</th><th>Mở bài 3</th><th>Gõ code 3</th><th>Chạy thử 3</th><th>Nộp bài 3</th></tr></thead>
+  <tbody>
+  <tr>
+    <td class="u">1hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2487ms</td><td class="ok">✓ 16313ms</td><td class="ok">✓ 60615ms</td><td class="ok">✓ 9784ms <i>pass</i></td><td class="ok">✓ 11502ms</td><td class="ok">✓ 5515ms</td><td class="ok">✓ 60544ms</td><td class="ok">✓ 8369ms <i>pass</i></td><td class="ok">✓ 10738ms</td><td class="ok">✓ 14348ms</td><td class="ok">✓ 60767ms</td><td class="ok">✓ 8653ms <i>pass</i></td><td class="ok">✓ 12464ms</td>
+  </tr>
+  <tr>
+    <td class="u">2hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6057ms</td><td class="ok">✓ 12426ms</td><td class="ok">✓ 60678ms</td><td class="ok">✓ 9013ms <i>pass</i></td><td class="ok">✓ 71714ms</td><td class="ok">✓ 10943ms</td><td class="ok">✓ 60689ms</td><td class="ok">✓ 6737ms <i>pass</i></td><td class="ok">✓ 10065ms</td><td class="ok">✓ 15914ms</td><td class="ok">✓ 60638ms</td><td class="ok">✓ 10208ms <i>pass</i></td><td class="ok">✓ 11204ms</td>
+  </tr>
+  <tr>
+    <td class="u">3hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 1785ms</td><td class="ok">✓ 16652ms</td><td class="ok">✓ 60676ms</td><td class="ok">✓ 9022ms <i>pass</i></td><td class="ok">✓ 71622ms</td><td class="ok">✓ 10867ms</td><td class="ok">✓ 60731ms</td><td class="ok">✓ 8387ms <i>pass</i></td><td class="ok">✓ 10675ms</td><td class="ok">✓ 14410ms</td><td class="ok">✓ 60768ms</td><td class="ok">✓ 7811ms <i>pass</i></td><td class="ok">✓ 10386ms</td>
+  </tr>
+  <tr>
+    <td class="u">4hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6382ms</td><td class="ok">✓ 14229ms</td><td class="ok">✓ 60671ms</td><td class="ok">✓ 9762ms <i>pass</i></td><td class="ok">✓ 11610ms</td><td class="ok">✓ 5564ms</td><td class="ok">✓ 60613ms</td><td class="ok">✓ 9189ms <i>pass</i></td><td class="ok">✓ 10728ms</td><td class="ok">✓ 16094ms</td><td class="ok">✓ 60755ms</td><td class="ok">✓ 7830ms <i>pass</i></td><td class="ok">✓ 12449ms</td>
+  </tr>
+  <tr>
+    <td class="u">5hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2504ms</td><td class="ok">✓ 15998ms</td><td class="ok">✓ 60707ms</td><td class="ok">✓ 9003ms <i>pass</i></td><td class="ok">✓ 12520ms</td><td class="ok">✓ 5435ms</td><td class="ok">✓ 60794ms</td><td class="ok">✓ 9187ms <i>pass</i></td><td class="ok">✓ 10903ms</td><td class="ok">✓ 15103ms</td><td class="ok">✓ 60652ms</td><td class="ok">✓ 8653ms <i>pass</i></td><td class="ok">✓ 10080ms</td>
+  </tr>
+  <tr>
+    <td class="u">6hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2526ms</td><td class="ok">✓ 15958ms</td><td class="ok">✓ 60677ms</td><td class="ok">✓ 9785ms <i>pass</i></td><td class="ok">✓ 72295ms</td><td class="ok">✓ 10392ms</td><td class="ok">✓ 60678ms</td><td class="ok">✓ 9163ms <i>pass</i></td><td class="ok">✓ 10910ms</td><td class="ok">✓ 15069ms</td><td class="ok">✓ 60636ms</td><td class="ok">✓ 6213ms <i>pass</i></td><td class="ok">✓ 11496ms</td>
+  </tr>
+  <tr>
+    <td class="u">7hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 4432ms</td><td class="ok">✓ 13929ms</td><td class="ok">✓ 60706ms</td><td class="ok">✓ 9013ms <i>pass</i></td><td class="ok">✓ 13046ms</td><td class="ok">✓ 5025ms</td><td class="ok">✓ 60684ms</td><td class="ok">✓ 8353ms <i>pass</i></td><td class="ok">✓ 7452ms</td><td class="ok">✓ 4943ms</td><td class="ok">✓ 60556ms</td><td class="ok">✓ 10212ms <i>pass</i></td><td class="ok">✓ 11518ms</td>
+  </tr>
+  <tr>
+    <td class="u">8hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6095ms</td><td class="ok">✓ 12390ms</td><td class="ok">✓ 60689ms</td><td class="ok">✓ 8208ms <i>pass</i></td><td class="ok">✓ 70711ms</td><td class="ok">✓ 8089ms</td><td class="ok">✓ 60570ms</td><td class="ok">✓ 9188ms <i>pass</i></td><td class="ok">✓ 10583ms</td><td class="ok">✓ 16238ms</td><td class="ok">✓ 60751ms</td><td class="ok">✓ 9444ms <i>pass</i></td><td class="ok">✓ 9699ms</td>
+  </tr>
+  <tr>
+    <td class="u">9hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 4949ms</td><td class="ok">✓ 13709ms</td><td class="ok">✓ 60691ms</td><td class="ok">✓ 9001ms <i>pass</i></td><td class="ok">✓ 71713ms</td><td class="ok">✓ 10974ms</td><td class="ok">✓ 60678ms</td><td class="ok">✓ 6759ms <i>pass</i></td><td class="ok">✓ 9516ms</td><td class="ok">✓ 10503ms</td><td class="ok">✓ 60590ms</td><td class="ok">✓ 9447ms <i>pass</i></td><td class="ok">✓ 12514ms</td>
+  </tr>
+  <tr>
+    <td class="u">10hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6373ms</td><td class="ok">✓ 12110ms</td><td class="ok">✓ 60677ms</td><td class="ok">✓ 8194ms <i>pass</i></td><td class="ok">✓ 69476ms</td><td class="ok">✓ 4686ms</td><td class="ok">✓ 60564ms</td><td class="ok">✓ 9187ms <i>pass</i></td><td class="ok">✓ 10987ms</td><td class="ok">✓ 15845ms</td><td class="ok">✓ 61329ms</td><td class="ok">✓ 9444ms <i>pass</i></td><td class="ok">✓ 13129ms</td>
+  </tr>
+  <tr>
+    <td class="u">11hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 3084ms</td><td class="ok">✓ 12336ms</td><td class="ok">✓ 60567ms</td><td class="ok">✓ 9767ms <i>pass</i></td><td class="ok">✓ 70064ms</td><td class="ok">✓ 7018ms</td><td class="ok">✓ 60545ms</td><td class="ok">✓ 9970ms <i>pass</i></td><td class="ok">✓ 10780ms</td><td class="ok">✓ 16043ms</td><td class="ok">✓ 60860ms</td><td class="ok">✓ 8651ms <i>pass</i></td><td class="ok">✓ 10710ms</td>
+  </tr>
+  <tr>
+    <td class="u">12hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 4778ms</td><td class="ok">✓ 13706ms</td><td class="ok">✓ 60690ms</td><td class="ok">✓ 7320ms <i>pass</i></td><td class="ok">✓ 70710ms</td><td class="ok">✓ 8089ms</td><td class="ok">✓ 60569ms</td><td class="ok">✓ 8356ms <i>pass</i></td><td class="ok">✓ 10001ms</td><td class="ok">✓ 15083ms</td><td class="ok">✓ 60769ms</td><td class="ok">✓ 8653ms <i>pass</i></td><td class="ok">✓ 11177ms</td>
+  </tr>
+  <tr>
+    <td class="u">13hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2250ms</td><td class="ok">✓ 13137ms</td><td class="ok">✓ 60561ms</td><td class="ok">✓ 8157ms <i>pass</i></td><td class="ok">✓ 72298ms</td><td class="ok">✓ 10617ms</td><td class="ok">✓ 60682ms</td><td class="ok">✓ 9186ms <i>pass</i></td><td class="ok">✓ 9997ms</td><td class="ok">✓ 15957ms</td><td class="ok">✓ 60634ms</td><td class="ok">✓ 9445ms <i>pass</i></td><td class="ok">✓ 13061ms</td>
+  </tr>
+  <tr>
+    <td class="u">14hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2446ms</td><td class="ok">✓ 11168ms</td><td class="ok">✓ 60548ms</td><td class="ok">✓ 9017ms <i>pass</i></td><td class="ok">✓ 70094ms</td><td class="ok">✓ 7409ms</td><td class="ok">✓ 60554ms</td><td class="ok">✓ 9932ms <i>pass</i></td><td class="ok">✓ 10734ms</td><td class="ok">✓ 16088ms</td><td class="ok">✓ 60739ms</td><td class="ok">✓ 9445ms <i>pass</i></td><td class="ok">✓ 11525ms</td>
+  </tr>
+  <tr>
+    <td class="u">15hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6080ms</td><td class="ok">✓ 12579ms</td><td class="ok">✓ 60651ms</td><td class="ok">✓ 7323ms <i>pass</i></td><td class="ok">✓ 72208ms</td><td class="ok">✓ 10184ms</td><td class="ok">✓ 60830ms</td><td class="ok">✓ 8368ms <i>pass</i></td><td class="ok">✓ 11070ms</td><td class="ok">✓ 14937ms</td><td class="ok">✓ 60652ms</td><td class="ok">✓ 8650ms <i>pass</i></td><td class="ok">✓ 13456ms</td>
+  </tr>
+  <tr>
+    <td class="u">16hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2481ms</td><td class="ok">✓ 16004ms</td><td class="ok">✓ 60689ms</td><td class="ok">✓ 9005ms <i>pass</i></td><td class="ok">✓ 72297ms</td><td class="ok">✓ 10671ms</td><td class="ok">✓ 60810ms</td><td class="ok">✓ 9980ms <i>pass</i></td><td class="ok">✓ 11220ms</td><td class="ok">✓ 14757ms</td><td class="ok">✓ 60636ms</td><td class="ok">✓ 9445ms <i>pass</i></td><td class="ok">✓ 10523ms</td>
+  </tr>
+  <tr>
+    <td class="u">17hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6381ms</td><td class="ok">✓ 12580ms</td><td class="ok">✓ 60612ms</td><td class="ok">✓ 9012ms <i>pass</i></td><td class="ok">✓ 12360ms</td><td class="ok">✓ 4850ms</td><td class="ok">✓ 60649ms</td><td class="ok">✓ 9150ms <i>pass</i></td><td class="ok">✓ 10581ms</td><td class="ok">✓ 16243ms</td><td class="ok">✓ 60840ms</td><td class="ok">✓ 9444ms <i>pass</i></td><td class="ok">✓ 13194ms</td>
+  </tr>
+  <tr>
+    <td class="u">18hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6062ms</td><td class="ok">✓ 12431ms</td><td class="ok">✓ 60687ms</td><td class="ok">✓ 7389ms <i>pass</i></td><td class="ok">✓ 9893ms</td><td class="ok">✓ 5570ms</td><td class="ok">✓ 60980ms</td><td class="ok">✓ 9188ms <i>pass</i></td><td class="ok">✓ 11287ms</td><td class="ok">✓ 15536ms</td><td class="ok">✓ 61770ms</td><td class="ok">✓ 9443ms <i>pass</i></td><td class="ok">✓ 11487ms</td>
+  </tr>
+  <tr>
+    <td class="u">19hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 7375ms</td><td class="ok">✓ 12833ms</td><td class="ok">✓ 60830ms</td><td class="ok">✓ 6456ms <i>pass</i></td><td class="ok">✓ 71715ms</td><td class="ok">✓ 11139ms</td><td class="ok">✓ 60678ms</td><td class="ok">✓ 9967ms <i>pass</i></td><td class="ok">✓ 10904ms</td><td class="ok">✓ 14178ms</td><td class="ok">✓ 60769ms</td><td class="ok">✓ 10209ms <i>pass</i></td><td class="ok">✓ 9699ms</td>
+  </tr>
+  <tr>
+    <td class="u">20hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6090ms</td><td class="ok">✓ 14317ms</td><td class="ok">✓ 60816ms</td><td class="ok">✓ 9768ms <i>pass</i></td><td class="ok">✓ 71747ms</td><td class="ok">✓ 11035ms</td><td class="ok">✓ 60657ms</td><td class="ok">✓ 9967ms <i>pass</i></td><td class="ok">✓ 10906ms</td><td class="ok">✓ 14180ms</td><td class="ok">✓ 60765ms</td><td class="ok">✓ 9446ms <i>pass</i></td><td class="ok">✓ 13174ms</td>
+  </tr>
+  <tr>
+    <td class="u">21hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 2079ms</td><td class="ok">✓ 11314ms</td><td class="ok">✓ 60598ms</td><td class="ok">✓ 7412ms <i>pass</i></td><td class="ok">✓ 11616ms</td><td class="ok">✓ 5380ms</td><td class="ok">✓ 60718ms</td><td class="ok">✓ 8384ms <i>pass</i></td><td class="ok">✓ 10782ms</td><td class="ok">✓ 14307ms</td><td class="ok">✓ 60764ms</td><td class="ok">✓ 8652ms <i>pass</i></td><td class="ok">✓ 11499ms</td>
+  </tr>
+  <tr>
+    <td class="u">22hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6098ms</td><td class="ok">✓ 12400ms</td><td class="ok">✓ 60709ms</td><td class="ok">✓ 8846ms <i>pass</i></td><td class="ok">✓ 72296ms</td><td class="ok">✓ 10392ms</td><td class="ok">✓ 60677ms</td><td class="ok">✓ 9185ms <i>pass</i></td><td class="ok">✓ 10907ms</td><td class="ok">✓ 14179ms</td><td class="ok">✓ 60766ms</td><td class="ok">✓ 9445ms <i>pass</i></td><td class="ok">✓ 11301ms</td>
+  </tr>
+  <tr>
+    <td class="u">23hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 4450ms</td><td class="ok">✓ 11020ms</td><td class="ok">✓ 60590ms</td><td class="ok">✓ 9015ms <i>pass</i></td><td class="ok">✓ 72297ms</td><td class="ok">✓ 10222ms</td><td class="ok">✓ 60702ms</td><td class="ok">✓ 9185ms <i>pass</i></td><td class="ok">✓ 9893ms</td><td class="ok">✓ 15189ms</td><td class="ok">✓ 60770ms</td><td class="ok">✓ 9446ms <i>pass</i></td><td class="ok">✓ 13060ms</td>
+  </tr>
+  <tr>
+    <td class="u">24hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 7330ms</td><td class="ok">✓ 13075ms</td><td class="ok">✓ 60816ms</td><td class="ok">✓ 9783ms <i>pass</i></td><td class="ok">✓ 70065ms</td><td class="ok">✓ 8733ms</td><td class="ok">✓ 60570ms</td><td class="ok">✓ 9188ms <i>pass</i></td><td class="ok">✓ 10916ms</td><td class="ok">✓ 14170ms</td><td class="ok">✓ 60765ms</td><td class="ok">✓ 9447ms <i>pass</i></td><td class="ok">✓ 9100ms</td>
+  </tr>
+  <tr>
+    <td class="u">25hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6379ms</td><td class="ok">✓ 14265ms</td><td class="ok">✓ 60655ms</td><td class="ok">✓ 9768ms <i>pass</i></td><td class="ok">✓ 12470ms</td><td class="ok">✓ 4948ms</td><td class="ok">✓ 60701ms</td><td class="ok">✓ 7580ms <i>pass</i></td><td class="ok">✓ 11311ms</td><td class="ok">✓ 13777ms</td><td class="ok">✓ 60766ms</td><td class="ok">✓ 9447ms <i>pass</i></td><td class="ok">✓ 11484ms</td>
+  </tr>
+  <tr>
+    <td class="u">26hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 5734ms</td><td class="ok">✓ 12749ms</td><td class="ok">✓ 60690ms</td><td class="ok">✓ 9770ms <i>pass</i></td><td class="ok">✓ 71713ms</td><td class="ok">✓ 10989ms</td><td class="ok">✓ 60692ms</td><td class="ok">✓ 8384ms <i>pass</i></td><td class="ok">✓ 8066ms</td><td class="ok">✓ 8923ms</td><td class="ok">✓ 60606ms</td><td class="ok">✓ 7811ms <i>pass</i></td><td class="ok">✓ 11526ms</td>
+  </tr>
+  <tr>
+    <td class="u">27hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 5927ms</td><td class="ok">✓ 13037ms</td><td class="ok">✓ 60608ms</td><td class="ok">✓ 9015ms <i>pass</i></td><td class="ok">✓ 71712ms</td><td class="ok">✓ 10973ms</td><td class="ok">✓ 60661ms</td><td class="ok">✓ 9187ms <i>pass</i></td><td class="ok">✓ 9665ms</td><td class="ok">✓ 15417ms</td><td class="ok">✓ 60769ms</td><td class="ok">✓ 7805ms <i>pass</i></td><td class="ok">✓ 13436ms</td>
+  </tr>
+  <tr>
+    <td class="u">28hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6055ms</td><td class="ok">✓ 12601ms</td><td class="ok">✓ 60691ms</td><td class="ok">✓ 9012ms <i>pass</i></td><td class="ok">✓ 71714ms</td><td class="ok">✓ 10771ms</td><td class="ok">✓ 60743ms</td><td class="ok">✓ 6715ms <i>pass</i></td><td class="ok">✓ 10956ms</td><td class="ok">✓ 15937ms</td><td class="ok">✓ 61653ms</td><td class="ok">✓ 10206ms <i>pass</i></td><td class="ok">✓ 13025ms</td>
+  </tr>
+  <tr>
+    <td class="u">29hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6631ms</td><td class="ok">✓ 12337ms</td><td class="ok">✓ 60604ms</td><td class="ok">✓ 9764ms <i>pass</i></td><td class="ok">✓ 12594ms</td><td class="ok">✓ 5282ms</td><td class="ok">✓ 60872ms</td><td class="ok">✓ 8356ms <i>pass</i></td><td class="ok">✓ 10747ms</td><td class="ok">✓ 14341ms</td><td class="ok">✓ 60765ms</td><td class="ok">✓ 7814ms <i>pass</i></td><td class="ok">✓ 11174ms</td>
+  </tr>
+  <tr>
+    <td class="u">30hvm</td>
+    <td class="ok st">ĐẠT</td>
+    <td class="ok">✓ 6010ms</td><td class="ok">✓ 14390ms</td><td class="ok">✓ 60831ms</td><td class="ok">✓ 8999ms <i>pass</i></td><td class="ok">✓ 71714ms</td><td class="ok">✓ 10974ms</td><td class="ok">✓ 60677ms</td><td class="ok">✓ 9163ms <i>pass</i></td><td class="ok">✓ 10907ms</td><td class="ok">✓ 15918ms</td><td class="ok">✓ 60884ms</td><td class="ok">✓ 8650ms <i>pass</i></td><td class="ok">✓ 11581ms</td>
+  </tr></tbody>
+</table></div>
+<p class="meta">Ô mỗi pha: ✓/✕ kèm thời gian (ms). Với "Chạy thử", <i>pass/fail</i> là kết quả chấm code trên server.</p>
+
+<footer>
+  Báo cáo tạo tự động từ bộ load test Playwright · https://test.ednext.com.vn · 2026-08-11T10:15:00.039Z<br>
+  Bài đã chạy: Bài 1 (id 1934) isPrime · Bài 2 (id 1935) factorSum · Bài 3 (id 1936) greatestCommonPrimeDivisor
+</footer>
+
+</div></body></html>

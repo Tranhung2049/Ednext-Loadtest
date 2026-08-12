@@ -1,0 +1,4385 @@
+{
+  "meta": {
+    "site": "https://test.ednext.com.vn",
+    "course": "thuat-toan-can-ban",
+    "startedAt": "2026-08-11T10:08:41.139Z",
+    "startEpoch": 1786442921140,
+    "concurrency": 30,
+    "offset": 0,
+    "doSubmit": true,
+    "headless": true,
+    "blockAssets": true,
+    "skipEnroll": true,
+    "activities": [
+      {
+        "key": "act1",
+        "id": 1934,
+        "name": "isPrime"
+      },
+      {
+        "key": "act2",
+        "id": 1935,
+        "name": "factorSum"
+      },
+      {
+        "key": "act3",
+        "id": 1936,
+        "name": "greatestCommonPrimeDivisor"
+      }
+    ],
+    "finishedAt": "2026-08-11T10:15:00.039Z",
+    "totalMs": 378747
+  },
+  "results": [
+    {
+      "user": "1hvm",
+      "index": 0,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 308,
+          "status": "ok",
+          "durMs": 6230,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 2487,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24257,
+          "status": "ok",
+          "durMs": 16313,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40570,
+          "status": "ok",
+          "durMs": 60615,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9784,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 11502,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 124366,
+          "status": "ok",
+          "durMs": 5515,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 129881,
+          "status": "ok",
+          "durMs": 60544,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 8369,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 10738,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277365,
+          "status": "ok",
+          "durMs": 14348,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291713,
+          "status": "ok",
+          "durMs": 60767,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 8653,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 12464,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "2hvm",
+      "index": 1,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 701,
+          "status": "ok",
+          "durMs": 7092,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 6057,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27827,
+          "status": "ok",
+          "durMs": 12426,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40253,
+          "status": "ok",
+          "durMs": 60678,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103075,
+          "status": "ok",
+          "durMs": 9013,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 71714,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184577,
+          "status": "ok",
+          "durMs": 10943,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195520,
+          "status": "ok",
+          "durMs": 60689,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 6737,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266626,
+          "status": "ok",
+          "durMs": 10065,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276691,
+          "status": "ok",
+          "durMs": 15914,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292605,
+          "status": "ok",
+          "durMs": 60638,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 10208,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 11204,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "3hvm",
+      "index": 2,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 1027,
+          "status": "ok",
+          "durMs": 5697,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 1785,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 23555,
+          "status": "ok",
+          "durMs": 16652,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40207,
+          "status": "ok",
+          "durMs": 60676,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103075,
+          "status": "ok",
+          "durMs": 9022,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 71622,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184486,
+          "status": "ok",
+          "durMs": 10867,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195353,
+          "status": "ok",
+          "durMs": 60731,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 8387,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 10675,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277302,
+          "status": "ok",
+          "durMs": 14410,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291712,
+          "status": "ok",
+          "durMs": 60768,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355223,
+          "status": "ok",
+          "durMs": 7811,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 10386,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "4hvm",
+      "index": 3,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 1425,
+          "status": "ok",
+          "durMs": 5312,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 6382,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 28152,
+          "status": "ok",
+          "durMs": 14229,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 42381,
+          "status": "ok",
+          "durMs": 60671,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103078,
+          "status": "ok",
+          "durMs": 9762,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 11610,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 124474,
+          "status": "ok",
+          "durMs": 5564,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130038,
+          "status": "ok",
+          "durMs": 60613,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 9189,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10728,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277357,
+          "status": "ok",
+          "durMs": 16094,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293451,
+          "status": "ok",
+          "durMs": 60755,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 7830,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 12449,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "5hvm",
+      "index": 4,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 1878,
+          "status": "ok",
+          "durMs": 6554,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 2504,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24274,
+          "status": "ok",
+          "durMs": 15998,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40272,
+          "status": "ok",
+          "durMs": 60707,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9003,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 12520,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 125383,
+          "status": "ok",
+          "durMs": 5435,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130818,
+          "status": "ok",
+          "durMs": 60794,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 9187,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10903,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277531,
+          "status": "ok",
+          "durMs": 15103,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292634,
+          "status": "ok",
+          "durMs": 60652,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 8653,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 10080,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "6hvm",
+      "index": 5,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 2558,
+          "status": "ok",
+          "durMs": 7018,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 2526,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24296,
+          "status": "ok",
+          "durMs": 15958,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40254,
+          "status": "ok",
+          "durMs": 60677,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 9785,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 72295,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185159,
+          "status": "ok",
+          "durMs": 10392,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195551,
+          "status": "ok",
+          "durMs": 60678,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9163,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10910,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277538,
+          "status": "ok",
+          "durMs": 15069,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292607,
+          "status": "ok",
+          "durMs": 60636,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 6213,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365433,
+          "status": "ok",
+          "durMs": 11496,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "7hvm",
+      "index": 6,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 2836,
+          "status": "ok",
+          "durMs": 7283,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 4432,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 26202,
+          "status": "ok",
+          "durMs": 13929,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40131,
+          "status": "ok",
+          "durMs": 60706,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103075,
+          "status": "ok",
+          "durMs": 9013,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 13046,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 125909,
+          "status": "ok",
+          "durMs": 5025,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130934,
+          "status": "ok",
+          "durMs": 60684,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 8353,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266626,
+          "status": "ok",
+          "durMs": 7452,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 274078,
+          "status": "ok",
+          "durMs": 4943,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 279021,
+          "status": "ok",
+          "durMs": 60556,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355221,
+          "status": "ok",
+          "durMs": 10212,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 11518,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "8hvm",
+      "index": 7,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 3221,
+          "status": "ok",
+          "durMs": 5647,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 6095,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27866,
+          "status": "ok",
+          "durMs": 12390,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40256,
+          "status": "ok",
+          "durMs": 60689,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 8208,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 70711,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 183573,
+          "status": "ok",
+          "durMs": 8089,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 191662,
+          "status": "ok",
+          "durMs": 60570,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 9188,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10583,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277212,
+          "status": "ok",
+          "durMs": 16238,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293450,
+          "status": "ok",
+          "durMs": 60751,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 9444,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 9699,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "9hvm",
+      "index": 8,
+      "ok": true,
+      "startEpoch": 1786442942910,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 3662,
+          "status": "ok",
+          "durMs": 6456,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21770,
+          "status": "ok",
+          "durMs": 4949,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 26719,
+          "status": "ok",
+          "durMs": 13709,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40428,
+          "status": "ok",
+          "durMs": 60691,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9001,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 71713,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184576,
+          "status": "ok",
+          "durMs": 10974,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195550,
+          "status": "ok",
+          "durMs": 60678,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 6759,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266626,
+          "status": "ok",
+          "durMs": 9516,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276142,
+          "status": "ok",
+          "durMs": 10503,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 286645,
+          "status": "ok",
+          "durMs": 60590,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355222,
+          "status": "ok",
+          "durMs": 9447,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 12514,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "10hvm",
+      "index": 9,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 3964,
+          "status": "ok",
+          "durMs": 6519,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 6373,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 28144,
+          "status": "ok",
+          "durMs": 12110,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40254,
+          "status": "ok",
+          "durMs": 60677,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 8194,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 69476,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 182338,
+          "status": "ok",
+          "durMs": 4686,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 187024,
+          "status": "ok",
+          "durMs": 60564,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 9187,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10987,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277615,
+          "status": "ok",
+          "durMs": 15845,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293460,
+          "status": "ok",
+          "durMs": 61329,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355226,
+          "status": "ok",
+          "durMs": 9444,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 13129,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "11hvm",
+      "index": 10,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 4434,
+          "status": "ok",
+          "durMs": 7221,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 3084,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24855,
+          "status": "ok",
+          "durMs": 12336,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 37191,
+          "status": "ok",
+          "durMs": 60567,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103074,
+          "status": "ok",
+          "durMs": 9767,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 70064,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 182928,
+          "status": "ok",
+          "durMs": 7018,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 189946,
+          "status": "ok",
+          "durMs": 60545,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 9970,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10780,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277409,
+          "status": "ok",
+          "durMs": 16043,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293452,
+          "status": "ok",
+          "durMs": 60860,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 8651,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 10710,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "12hvm",
+      "index": 11,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 4888,
+          "status": "ok",
+          "durMs": 9387,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 4778,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 26549,
+          "status": "ok",
+          "durMs": 13706,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40255,
+          "status": "ok",
+          "durMs": 60690,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 7320,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 70710,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 183572,
+          "status": "ok",
+          "durMs": 8089,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 191661,
+          "status": "ok",
+          "durMs": 60569,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 8356,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 10001,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276628,
+          "status": "ok",
+          "durMs": 15083,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291711,
+          "status": "ok",
+          "durMs": 60769,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 8653,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 11177,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "13hvm",
+      "index": 12,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 5250,
+          "status": "ok",
+          "durMs": 8382,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 2250,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24021,
+          "status": "ok",
+          "durMs": 13137,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 37158,
+          "status": "ok",
+          "durMs": 60561,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103074,
+          "status": "ok",
+          "durMs": 8157,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 72298,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185160,
+          "status": "ok",
+          "durMs": 10617,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195777,
+          "status": "ok",
+          "durMs": 60682,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256646,
+          "status": "ok",
+          "durMs": 9186,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 9997,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276626,
+          "status": "ok",
+          "durMs": 15957,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292583,
+          "status": "ok",
+          "durMs": 60634,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 9445,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 13061,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "14hvm",
+      "index": 13,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 5638,
+          "status": "ok",
+          "durMs": 8661,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 2446,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24217,
+          "status": "ok",
+          "durMs": 11168,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 35385,
+          "status": "ok",
+          "durMs": 60548,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103073,
+          "status": "ok",
+          "durMs": 9017,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 70094,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 182957,
+          "status": "ok",
+          "durMs": 7409,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 190366,
+          "status": "ok",
+          "durMs": 60554,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 9932,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10734,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277363,
+          "status": "ok",
+          "durMs": 16088,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293451,
+          "status": "ok",
+          "durMs": 60739,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 9445,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 11525,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "15hvm",
+      "index": 14,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 6280,
+          "status": "ok",
+          "durMs": 7880,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 6080,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27851,
+          "status": "ok",
+          "durMs": 12579,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40430,
+          "status": "ok",
+          "durMs": 60651,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 7323,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 72208,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185070,
+          "status": "ok",
+          "durMs": 10184,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195254,
+          "status": "ok",
+          "durMs": 60830,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 8368,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 11070,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277697,
+          "status": "ok",
+          "durMs": 14937,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292634,
+          "status": "ok",
+          "durMs": 60652,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 8650,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 13456,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "16hvm",
+      "index": 15,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 7161,
+          "status": "ok",
+          "durMs": 7994,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 2481,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 24252,
+          "status": "ok",
+          "durMs": 16004,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40256,
+          "status": "ok",
+          "durMs": 60689,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 9005,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 72297,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185160,
+          "status": "ok",
+          "durMs": 10671,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195831,
+          "status": "ok",
+          "durMs": 60810,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256646,
+          "status": "ok",
+          "durMs": 9980,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266630,
+          "status": "ok",
+          "durMs": 11220,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277850,
+          "status": "ok",
+          "durMs": 14757,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 292607,
+          "status": "ok",
+          "durMs": 60636,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 9445,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 10523,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "17hvm",
+      "index": 16,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8090,
+          "status": "ok",
+          "durMs": 8187,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 6381,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 28152,
+          "status": "ok",
+          "durMs": 12580,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40732,
+          "status": "ok",
+          "durMs": 60612,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9012,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 12360,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 125223,
+          "status": "ok",
+          "durMs": 4850,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130073,
+          "status": "ok",
+          "durMs": 60649,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 9150,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10581,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277209,
+          "status": "ok",
+          "durMs": 16243,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293452,
+          "status": "ok",
+          "durMs": 60840,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355225,
+          "status": "ok",
+          "durMs": 9444,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 13194,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "18hvm",
+      "index": 17,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8500,
+          "status": "ok",
+          "durMs": 9631,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 6062,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27833,
+          "status": "ok",
+          "durMs": 12431,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40264,
+          "status": "ok",
+          "durMs": 60687,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 7389,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 9893,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 122755,
+          "status": "ok",
+          "durMs": 5570,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 128325,
+          "status": "ok",
+          "durMs": 60980,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256642,
+          "status": "ok",
+          "durMs": 9188,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 11287,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277915,
+          "status": "ok",
+          "durMs": 15536,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293451,
+          "status": "ok",
+          "durMs": 61770,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355226,
+          "status": "ok",
+          "durMs": 9443,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 11487,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "19hvm",
+      "index": 18,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8550,
+          "status": "ok",
+          "durMs": 10910,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 7375,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 29147,
+          "status": "ok",
+          "durMs": 12833,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 41980,
+          "status": "ok",
+          "durMs": 60830,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 6456,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112861,
+          "status": "ok",
+          "durMs": 71715,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184576,
+          "status": "ok",
+          "durMs": 11139,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195715,
+          "status": "ok",
+          "durMs": 60678,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256646,
+          "status": "ok",
+          "durMs": 9967,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10904,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277533,
+          "status": "ok",
+          "durMs": 14178,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291711,
+          "status": "ok",
+          "durMs": 60769,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355223,
+          "status": "ok",
+          "durMs": 10209,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 9699,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "20hvm",
+      "index": 19,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8639,
+          "status": "ok",
+          "durMs": 8010,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 6090,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27861,
+          "status": "ok",
+          "durMs": 14317,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 42178,
+          "status": "ok",
+          "durMs": 60816,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103078,
+          "status": "ok",
+          "durMs": 9768,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 71747,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184611,
+          "status": "ok",
+          "durMs": 11035,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195646,
+          "status": "ok",
+          "durMs": 60657,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9967,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10906,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277535,
+          "status": "ok",
+          "durMs": 14180,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291715,
+          "status": "ok",
+          "durMs": 60765,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 9446,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 13174,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "21hvm",
+      "index": 20,
+      "ok": true,
+      "startEpoch": 1786442942911,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8721,
+          "status": "ok",
+          "durMs": 8782,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21771,
+          "status": "ok",
+          "durMs": 2079,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 23850,
+          "status": "ok",
+          "durMs": 11314,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 35164,
+          "status": "ok",
+          "durMs": 60598,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103073,
+          "status": "ok",
+          "durMs": 7412,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112862,
+          "status": "ok",
+          "durMs": 11616,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 124478,
+          "status": "ok",
+          "durMs": 5380,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 129858,
+          "status": "ok",
+          "durMs": 60718,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 8384,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 10782,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277409,
+          "status": "ok",
+          "durMs": 14307,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291716,
+          "status": "ok",
+          "durMs": 60764,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355223,
+          "status": "ok",
+          "durMs": 8652,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 11499,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "22hvm",
+      "index": 21,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 8803,
+          "status": "ok",
+          "durMs": 9921,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 6098,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27870,
+          "status": "ok",
+          "durMs": 12400,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40270,
+          "status": "ok",
+          "durMs": 60709,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 8846,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 72296,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185159,
+          "status": "ok",
+          "durMs": 10392,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195551,
+          "status": "ok",
+          "durMs": 60677,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9185,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10907,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277535,
+          "status": "ok",
+          "durMs": 14179,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291714,
+          "status": "ok",
+          "durMs": 60766,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 9445,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 11301,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "23hvm",
+      "index": 22,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 9160,
+          "status": "ok",
+          "durMs": 9872,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 4450,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 26222,
+          "status": "ok",
+          "durMs": 11020,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 37242,
+          "status": "ok",
+          "durMs": 60590,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103074,
+          "status": "ok",
+          "durMs": 9015,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 72297,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 185160,
+          "status": "ok",
+          "durMs": 10222,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195382,
+          "status": "ok",
+          "durMs": 60702,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9185,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 9893,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276521,
+          "status": "ok",
+          "durMs": 15189,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291710,
+          "status": "ok",
+          "durMs": 60770,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355223,
+          "status": "ok",
+          "durMs": 9446,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 13060,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "24hvm",
+      "index": 23,
+      "ok": true,
+      "startEpoch": 1786442942913,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 9496,
+          "status": "ok",
+          "durMs": 12273,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21773,
+          "status": "ok",
+          "durMs": 7330,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 29103,
+          "status": "ok",
+          "durMs": 13075,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 42178,
+          "status": "ok",
+          "durMs": 60816,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103078,
+          "status": "ok",
+          "durMs": 9783,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 70065,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 182929,
+          "status": "ok",
+          "durMs": 8733,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 191662,
+          "status": "ok",
+          "durMs": 60570,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256644,
+          "status": "ok",
+          "durMs": 9188,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 10916,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277545,
+          "status": "ok",
+          "durMs": 14170,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291715,
+          "status": "ok",
+          "durMs": 60765,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355222,
+          "status": "ok",
+          "durMs": 9447,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365435,
+          "status": "ok",
+          "durMs": 9100,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "25hvm",
+      "index": 24,
+      "ok": true,
+      "startEpoch": 1786442942913,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 9843,
+          "status": "ok",
+          "durMs": 11906,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21773,
+          "status": "ok",
+          "durMs": 6379,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 28152,
+          "status": "ok",
+          "durMs": 14265,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 42417,
+          "status": "ok",
+          "durMs": 60655,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103078,
+          "status": "ok",
+          "durMs": 9768,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 12470,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 125334,
+          "status": "ok",
+          "durMs": 4948,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130282,
+          "status": "ok",
+          "durMs": 60701,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 7580,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266626,
+          "status": "ok",
+          "durMs": 11311,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277937,
+          "status": "ok",
+          "durMs": 13777,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291714,
+          "status": "ok",
+          "durMs": 60766,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 9447,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 11484,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "26hvm",
+      "index": 25,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 10624,
+          "status": "ok",
+          "durMs": 9168,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 5734,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27506,
+          "status": "ok",
+          "durMs": 12749,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40255,
+          "status": "ok",
+          "durMs": 60690,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103076,
+          "status": "ok",
+          "durMs": 9770,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 71713,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184577,
+          "status": "ok",
+          "durMs": 10989,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195566,
+          "status": "ok",
+          "durMs": 60692,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 8384,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 8066,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 274693,
+          "status": "ok",
+          "durMs": 8923,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 283616,
+          "status": "ok",
+          "durMs": 60606,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355222,
+          "status": "ok",
+          "durMs": 7811,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 11526,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "27hvm",
+      "index": 26,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 10794,
+          "status": "ok",
+          "durMs": 8232,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 5927,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27699,
+          "status": "ok",
+          "durMs": 13037,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40736,
+          "status": "ok",
+          "durMs": 60608,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9015,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 71712,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184576,
+          "status": "ok",
+          "durMs": 10973,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195549,
+          "status": "ok",
+          "durMs": 60661,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9187,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266629,
+          "status": "ok",
+          "durMs": 9665,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 276294,
+          "status": "ok",
+          "durMs": 15417,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291711,
+          "status": "ok",
+          "durMs": 60769,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355223,
+          "status": "ok",
+          "durMs": 7805,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 13436,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "28hvm",
+      "index": 27,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 11095,
+          "status": "ok",
+          "durMs": 8836,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 6055,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27827,
+          "status": "ok",
+          "durMs": 12601,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40428,
+          "status": "ok",
+          "durMs": 60691,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9012,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 71714,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184577,
+          "status": "ok",
+          "durMs": 10771,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195348,
+          "status": "ok",
+          "durMs": 60743,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 6715,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266626,
+          "status": "ok",
+          "durMs": 10956,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277582,
+          "status": "ok",
+          "durMs": 15937,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293519,
+          "status": "ok",
+          "durMs": 61653,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355226,
+          "status": "ok",
+          "durMs": 10206,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365436,
+          "status": "ok",
+          "durMs": 13025,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "29hvm",
+      "index": 28,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 11547,
+          "status": "ok",
+          "durMs": 9324,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 6631,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 28403,
+          "status": "ok",
+          "durMs": 12337,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 40740,
+          "status": "ok",
+          "durMs": 60604,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103077,
+          "status": "ok",
+          "durMs": 9764,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112864,
+          "status": "ok",
+          "durMs": 12594,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 125458,
+          "status": "ok",
+          "durMs": 5282,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 130740,
+          "status": "ok",
+          "durMs": 60872,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256643,
+          "status": "ok",
+          "durMs": 8356,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266627,
+          "status": "ok",
+          "durMs": 10747,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277374,
+          "status": "ok",
+          "durMs": 14341,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 291715,
+          "status": "ok",
+          "durMs": 60765,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355224,
+          "status": "ok",
+          "durMs": 7814,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 11174,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    },
+    {
+      "user": "30hvm",
+      "index": 29,
+      "ok": true,
+      "startEpoch": 1786442942912,
+      "events": [
+        {
+          "phase": "setup",
+          "tStart": 11864,
+          "status": "ok",
+          "durMs": 8035,
+          "detail": {
+            "ready": true,
+            "status": 200
+          }
+        },
+        {
+          "phase": "login",
+          "tStart": 21772,
+          "status": "ok",
+          "durMs": 6010,
+          "detail": {
+            "url": "https://test.ednext.com.vn/learning"
+          }
+        },
+        {
+          "phase": "act1_open",
+          "tStart": 27782,
+          "status": "ok",
+          "durMs": 14390,
+          "detail": {
+            "id": 1934,
+            "name": "isPrime",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act1_type",
+          "tStart": 42172,
+          "status": "ok",
+          "durMs": 60831,
+          "detail": {
+            "id": 1934
+          }
+        },
+        {
+          "phase": "act1_run",
+          "tStart": 103078,
+          "status": "ok",
+          "durMs": 8999,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act1_submit",
+          "tStart": 112863,
+          "status": "ok",
+          "durMs": 71714,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act2_open",
+          "tStart": 184577,
+          "status": "ok",
+          "durMs": 10974,
+          "detail": {
+            "id": 1935,
+            "name": "factorSum",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act2_type",
+          "tStart": 195551,
+          "status": "ok",
+          "durMs": 60677,
+          "detail": {
+            "id": 1935
+          }
+        },
+        {
+          "phase": "act2_run",
+          "tStart": 256645,
+          "status": "ok",
+          "durMs": 9163,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act2_submit",
+          "tStart": 266628,
+          "status": "ok",
+          "durMs": 10907,
+          "detail": {
+            "submitted": true
+          }
+        },
+        {
+          "phase": "act3_open",
+          "tStart": 277535,
+          "status": "ok",
+          "durMs": 15918,
+          "detail": {
+            "id": 1936,
+            "name": "greatestCommonPrimeDivisor",
+            "attempts": 1
+          }
+        },
+        {
+          "phase": "act3_type",
+          "tStart": 293453,
+          "status": "ok",
+          "durMs": 60884,
+          "detail": {
+            "id": 1936
+          }
+        },
+        {
+          "phase": "act3_run",
+          "tStart": 355226,
+          "status": "ok",
+          "durMs": 8650,
+          "detail": {
+            "result": "pass"
+          }
+        },
+        {
+          "phase": "act3_submit",
+          "tStart": 365434,
+          "status": "ok",
+          "durMs": 11581,
+          "detail": {
+            "submitted": true
+          }
+        }
+      ],
+      "errors": [],
+      "act1_result": "pass",
+      "act2_result": "pass",
+      "act3_result": "pass"
+    }
+  ]
+}
